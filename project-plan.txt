@@ -1,0 +1,9 @@
+Goal - Anonymous Chatting Application
+
+Login
+    Create Room / Join Room (Enabled/Disabled)
+    Login using Google Account
+
+Create Room
+    Room Name
+    Unique ID - Share and Join Room

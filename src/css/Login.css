@@ -1,0 +1,160 @@
+.login {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: #0f0c29; /* fallback for old browsers */
+  background: #3a7bd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a6073,
+    #3a7bd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a6073,
+    #3a7bd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__middle {
+  width: 80%;
+  height: 80vh;
+  /* background-color: rgb(6, 0, 34); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__title {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10vh;
+}
+
+.login__title h1 {
+  color: rgb(213, 242, 255);
+}
+
+.login__roomBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15vh;
+}
+
+.login__createButton {
+  width: 250px;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login__createButton:disabled {
+  opacity: 1;
+}
+
+.login__joinButton {
+  width: 250px;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login__joinButton:disabled {
+  opacity: 1;
+}
+
+.login__gmailBox {
+}
+
+.login__gmailButton {
+  width: 300px;
+  border: none;
+  outline: none;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login__googleIcon {
+  width: 1.7rem;
+  margin-right: 10px;
+}
+
+.roomModal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roomModal__outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.roomModal__inner {
+  width: 25%;
+  height: auto;
+  background-color: white;
+  z-index: 2;
+  border-radius: 25px;
+  animation: fade-inn 200ms ease-in;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomModal__inner input {
+  outline: none;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.roomModal__inner button {
+  outline: none;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 15px;
+  background-color: rgb(25, 209, 25);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@keyframes fade-inn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

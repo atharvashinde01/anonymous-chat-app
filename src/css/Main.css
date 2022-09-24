@@ -1,0 +1,20 @@
+.main__chatting{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__chatting--left{
+
+}
+
+.main__leftTop{
+
+}
+
+.main__chatting--right{
+
+}
